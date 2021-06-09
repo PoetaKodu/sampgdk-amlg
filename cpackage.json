@@ -1,0 +1,22 @@
+{
+	"name": "sampgdk-amlg",
+	"type": "static lib",
+	"language": "C11",
+	"includeFolders": {
+		"public": "include"
+	},
+	"defines": {
+		"interface": [ "SAMPGDK_AMALGAMATION", "SAMPGDK_STATIC" ]
+	},
+	"files": [
+		"include/sampgdk/**.hpp",
+		"src/sampgdk.c"
+	],
+	"dependencies": {
+		"public": [
+			"samp-plugin-sdk@1.0.0"
+		]
+	},
+	"version": "0.1.0",
+	"description": "(PACC port of:) SAMPGDK Amalgamation"
+}
